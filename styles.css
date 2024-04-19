@@ -1,0 +1,203 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("bg3.jpeg");
+    background-size: 100vw 100vh;
+    background-color: #000000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgba(44, 44, 44, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#courseHeading {
+    padding-top: 3%;
+    width: 300px;
+    display: block;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    color: #000000;
+    font-weight: bold;
+    background-color: rgba(179, 179, 179, 0.6);
+    box-shadow: 0 0 10px rgba(15, 15, 15, 0.65);
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    color: #000000;
+    font-weight: bold;
+    background-color: rgba(206, 206, 206, 0.8);
+    box-shadow: 0 0 10px rgba(15, 15, 15, 0.65);
+}
+
+form {
+    padding-left: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form button {
+    margin-left: 60px;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 60px rgba(15, 15, 15, 0.85);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(15, 15, 15, 0.35);
+    color: #fff;
+    text-align: left;
+}
+
+
+#userStatus {
+    margin: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#navig {
+    margin: 10px;
+    text-align: left;
+}
+
+#content, #indexContent {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#loginType {
+    padding-left: 32%;
+    padding-top: 2%;
+}
+
+#view_pay {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    #courseHeading {
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    form button {
+        margin-left: 0;
+    }
+
+    input[type="text"], input[type="password"], select {
+        width: 70%;
+    }
+
+    table {
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ccc;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        float: left;
+        text-align: left;
+    }
+
+    #indexContent {
+        width: 95%;
+        padding-right: 5px;
+    }
+
+    #content {
+        width: 95%;
+        padding-right: 5px;
+    }
+}
